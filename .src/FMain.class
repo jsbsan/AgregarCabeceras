@@ -57,6 +57,7 @@ Public Sub ButtonAgregarCabecera_Click()
       Continue
     Endif
   Next
+  Message.Info("operaciones terminados")
 
 End
 

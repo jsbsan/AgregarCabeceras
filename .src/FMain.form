@@ -3,10 +3,14 @@
 { Form Form
   MoveScaled(0,0,137,65)
   { TextAreaFicherosProcesas TextArea
-    MoveScaled(1,2,113,60)
+    MoveScaled(1,10,113,52)
   }
   { ButtonAgregarCabecera Button
     MoveScaled(116,52,18,9)
     Text = ("Agregar Cabeceras")
+  }
+  { Label1 Label
+    MoveScaled(3,2,112,7)
+    Text = ("Indicar rutas de ficheros a agregar cabecesas segun sea tipo 001,002,011,012 y 013")
   }
 }
