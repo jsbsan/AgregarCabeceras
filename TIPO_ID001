@@ -1,0 +1,12 @@
+"FECHA	E034TEMPMED	E034LLUVIAS	ANULAR	ANULAR	ANULAR	ANULAR	ANULAR	ANULAR	ANULAR	ANULAR	ANULAR	ANULAR"
+---------------------------------------------------------------------------------------------------------------
+DATOS:	TEMP MEDIA AIRE - E34	PRECIPITACIONES - E34
+---------------------------------------------------------------------------------------------------------------
+FECHA
+TR_AMBIENTE(1) øC
+PLUVIOMETRO(1)  l/mý
+AUTOMATICO_1(1)
+FALLO_RED_1(1)
+PLUV_ACU(1) l/mý
+EVAP_ACU_8h(1) mm
+ALTURA_TANQUE_EVAP mm

@@ -1,0 +1,12 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,137,65)
+  { TextAreaFicherosProcesas TextArea
+    MoveScaled(1,2,113,60)
+  }
+  { ButtonAgregarCabecera Button
+    MoveScaled(116,52,18,9)
+    Text = ("Agregar Cabeceras")
+  }
+}

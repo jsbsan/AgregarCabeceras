@@ -1,0 +1,65 @@
+' Gambas class file
+
+Public tipo001 As String = "FECHA;E034TEMPMED;E034LLUVIAS;ANULAR;ANULAR;ANULAR;ANULAR;ANULAR;ANULAR;ANULAR;ANULAR;ANULAR;ANULAR"
+Public tipo002 As String = "FECHA;ANULAR;ANULAR;ANULAR;ANULAR;ANULAR;ANULAR;E034MAPLDR003;E034MAPLDT004;E034MAPLDR004;E034MAPLDR002;E034MAPLDR001;E034MAPLDT001;E034MAPLDT003;E034MAPLDT002;ANULAR;ANULAR"
+Public tipo011 As String = "FECHA;E034NEMBA;ANULAR"
+Public tipo012 As String = "FECHA;ANULAR;E034MAAFOC002;ANULAR"
+Public tipo013 As String = "FECHA;ANULAR;E034MAAFOC001"
+
+Public Sub ButtonAgregarCabecera_Click()
+
+  Dim l As String
+  Dim lineas As New String[]
+  Dim comando As String
+
+  lineas = Split(TextAreaFicherosProcesas.text, "\n")
+
+  For Each l In lineas
+
+    If InStr(l, "ID001") <> 0 Then
+      'he encontrado de que tipo es el archivo, le añado la linea tipo
+      COMANDO = "sed -i '1i " & tipo001 & "' " & l
+      Shell comando
+      Continue
+    Endif
+    If InStr(l, "ID002") <> 0 Then
+      'he encontrado de que tipo es el archivo, le añado la linea tipo
+      COMANDO = "sed -i '1i " & tipo002 & "' " & l
+      Shell comando
+      Continue
+    Endif
+
+    If InStr(l, "ID011") <> 0 Then
+      'he encontrado de que tipo es el archivo, le añado la linea tipo
+      COMANDO = "sed -i '1i " & tipo011 & "' " & l
+      Shell comando
+      Continue
+    Endif
+
+    If InStr(l, "ID011") <> 0 Then
+      'he encontrado de que tipo es el archivo, le añado la linea tipo
+      COMANDO = "sed -i '1i " & tipo011 & "' " & l
+      Shell comando
+      Continue
+    Endif
+
+    If InStr(l, "ID012") <> 0 Then
+      'he encontrado de que tipo es el archivo, le añado la linea tipo
+      COMANDO = "sed -i '1i " & tipo012 & "' " & l
+      Shell comando
+      Continue
+    Endif
+
+    If InStr(l, "ID013") <> 0 Then
+      'he encontrado de que tipo es el archivo, le añado la linea tipo
+      COMANDO = "sed -i '1i " & tipo013 & "' " & l
+      Shell comando
+      Continue
+    Endif
+  Next
+
+End
+
+Public Sub Form_Open()
+
+End
