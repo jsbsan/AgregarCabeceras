@@ -13,4 +13,8 @@
     MoveScaled(3,2,112,7)
     Text = ("Indicar rutas de ficheros a agregar cabecesas segun sea tipo 001,002,011,012 y 013")
   }
+  { ButtonCargarDirectorio Button
+    MoveScaled(117,5,16,13)
+    Text = ("Cargar Directorio")
+  }
 }

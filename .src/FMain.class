@@ -65,3 +65,15 @@ End
 Public Sub Form_Open()
 
 End
+
+Public Sub ButtonCargarDirectorio_Click()
+
+  Dim contenido As New String[]
+
+  contenido.Add("")
+
+  comun.recorrer("/home/minino/MANUAL", contenido)
+
+  TextAreaFicherosProcesas.Text = contenido[0]
+
+End
